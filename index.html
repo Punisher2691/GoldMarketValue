@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GoldProject</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <input type="radio" name="gender" value="newest-oldest" id="checkNO" class="radioDate">newest-oldest <br>
+        <input type="radio" name="gender" value="oldest-newest" checked id="checkON" class="radioDate" data-name="default">oldest-newest <br>
+        <input type="radio" name="gender" value="lowest-highiest" id="checkLH" class="radioValue" data-name="asc">Lowest-highiest <br>
+        <input type="radio" name="gender" value="highiest-lowest" id="checkHL" class="radioValue" data-name="desc">Highiest-lowest <br>    
+        
+        <input type="range" step="1" min="1" max="100" value="20" id="range-slider">
+        <div id="display__days"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="display-gold">
+
+            </tbody>
+        </table>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
